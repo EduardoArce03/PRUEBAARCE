@@ -1,0 +1,8 @@
+
+<ul>
+    <li *ngFor="let tarea of listaTareas | async">
+        <a href="#">{{tarea.etiqueta}}</a>
+        <button (click)="goEditar(tarea)">Editar</button> |
+        <a routerLink="paginas/tarea/{{tarea.uid}}"></a>
+    </li>
+</ul>

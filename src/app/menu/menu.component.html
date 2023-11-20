@@ -1,0 +1,10 @@
+<header>
+    <h1>App PRUEBA 2</h1>
+    <nav>
+        <ul>
+            <li *ngFor="let link of paginas">
+                <a href="#" [routerLink]="link.path">{{link.titulo}}</a>
+            </li>
+        </ul>
+    </nav>
+</header>

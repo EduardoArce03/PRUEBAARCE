@@ -1,0 +1,15 @@
+<div class="formulario">
+<form action="">
+    <label for="txtNota">Ingresar Nota</label>
+    <input type="text" name="txtNota" [(ngModel)]="nota.descripcion">
+    <br>
+    <label for="txtFecha">Ingresar Fecha</label>
+    <input type="text" name="txtFecha" [(ngModel)]="nota.fecha">
+    <br>
+    <label for="txtEtiqueta">Ingresar Etiqueta</label>
+    <input type="text" name="txtEtiqueta" [(ngModel)]="nota.etiqueta">
+    <br>
+    <button (click)="saveTarea()">Ingresar</button>
+    <button (click)="goListado()">Listar</button>
+</form>
+</div>
